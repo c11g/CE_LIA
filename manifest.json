@@ -1,0 +1,12 @@
+{
+	"manifest_version": 2,
+	
+	"name": "Local IP Address",
+	"description": "open local ip address",
+	"version": "1.0",
+	
+	"browser_action": {
+		"default_icon": "favicon.png",
+		"default_popup": "popup.html"
+	}
+}
