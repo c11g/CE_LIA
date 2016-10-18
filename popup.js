@@ -1,7 +1,7 @@
 // Example (using the function below).
 getLocalIPs(function(ips) { // <!-- ips is an array of local IP addresses.
-    document.body.textContent = ips[1];
-    chrome.tabs.create({'url': 'http://' + ips[1]});
+    var ip = ips[1] || ips[0];
+    chrome.tabs.create({'url': 'http://' + ip});
 });
 
 function getLocalIPs(callback) {
